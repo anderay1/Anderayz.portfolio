@@ -1,0 +1,293 @@
+body{margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins" sans-serif;
+    background-image: url("images/beach.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+
+}
+h1{color: #fff;
+    font-size: larger;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight:700 ;
+    text-align: center;
+    user-select: none;
+}
+.Register{position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 300PX;
+    height: 250px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    padding: 12px 12px 12px 12px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+
+}
+.popup{position: absolute;
+    top: 0;
+    left: 47%;
+    width: 340px;
+    height: 300px;
+    background-color: #fff;
+    transform: translate(-50%,-50%)scale(0.1);
+    align-items: center;
+    margin: 25px auto;
+    border-radius: 15px;
+    visibility: hidden;
+    transition: transform 0.6s,top 0.6s;
+}
+.open-popup{top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+    visibility: visible;
+
+
+}
+.popup img{position: absolute;
+    top: -40px;
+    left: 150px;
+    align-items: center;
+    width: 60px;
+    border-radius:55%;
+  
+}
+.popup h1{color: #0b0202;
+    font-size: medium;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px;
+
+}
+.popup h2{color: #070101;
+    font-size: medium;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+.popup a{text-decoration: none;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    background:#000; 
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-left: 125px;  
+    margin-top: 25px;
+    cursor: pointer;
+}
+.popup a:hover{background: #36f107;
+    box-shadow: 0 0 5px rgb(10, 195, 4),
+    0 0 25px rgb(10, 195, 4), 0 0 50px rgb(10, 195, 4),
+    0 0 200px rgb(10, 195, 4), 0 0 200px rgb(10, 195, 4);
+    color: #fff;
+}
+
+.name{padding-bottom: 6px;
+
+}
+.name label{font-size: larger;
+    user-select: none;
+
+}
+.name input{outline: none;
+    border-radius: 2px;
+    user-select: none;
+    border: none;
+    cursor: pointer;
+}
+.email{padding-bottom: 6px;
+
+
+}
+.email label{font-size: larger;
+    user-select: none;
+
+}
+.email input{outline: none;
+    border-radius: 2px;
+    user-select: none;
+    border: none;
+    cursor: pointer;
+
+}
+.id{padding-bottom: 6px;
+
+}
+.id label{font-size: large;
+    user-select: none;
+
+}
+.id input{outline: none;
+    border-radius: 2px;
+    user-select: none;
+    border: none;
+    cursor: pointer;
+
+}
+.contact{padding-bottom: 6px;
+
+}
+.contact label{font-size: larger;
+    user-select: none;
+
+}
+.contact select{user-select: none;
+    border: none;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+}
+.contact select option{user-select: none;
+    cursor: pointer;
+    color: #fff;
+    background: #000;
+
+}
+.contact input{user-select: none;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+
+
+}
+.gender{padding-bottom: 6px;  
+   user-select: none;
+  
+   
+}
+.gender input{cursor: pointer;
+
+}
+.checkbox{padding-bottom: 6px;
+
+
+}
+.checkbox input{cursor: pointer;
+
+}
+.checkbox label{user-select: none;
+    font-size: larger;
+
+}
+button{background: #fff;
+    border-radius: 12px;
+    width: 100px;
+    border: none;
+    color:rgb(10, 195, 4); 
+    cursor: pointer;
+
+}
+button:hover{box-shadow: 0 0 5px rgb(10, 195, 4),
+    0 0 25px rgb(10, 195, 4), 0 0 50px rgb(10, 195, 4),
+    0 0 200px rgb(10, 195, 4), 0 0 200px rgb(10, 195, 4) ;
+
+}
+a{text-decoration: none;
+    color: rgb(10, 195, 4);
+    user-select: none;
+
+}
+p{user-select: none;
+    font-size: larger;
+
+}
+@media (max-width:750px){
+    body{
+        width: 100%;
+    }
+}
+@media (max-width:750px){
+    h1{
+        font-size: small;
+        font-weight: 400;
+    }
+}
+@media (max-width:750px){
+    .Register{
+        width: 280px;
+        left: 20%;
+        height: 200px;
+    }
+}
+@media (max-width:750px){
+    .Register label{
+        font-size: small;
+        font-weight: 400;
+    }
+}
+@media (max-width:750px){
+    .popup{
+        width: 320px;
+        height: 240px;
+        left: 50%;
+    }
+}
+@media (max-width:750px){
+    .popup h1{
+        font-size: small;
+        font-weight: 400;
+    }   
+}
+@media (max-width:750px){
+    .popup h2{
+        font-size: small;
+        font-weight: 400;
+    }
+}
+
+@media (max-width:750px){
+    .popup a{
+        font-size: small;
+        font-weight: 400;
+        width: 70px;
+        height: 20px;
+        
+    }
+}
+@media (max-width:750px){
+    .popup img{
+        top: -15px;
+        width: 30px;
+    }
+}
+@media (max-width:750px){
+    .open-popup{
+        top: 42%;
+    }
+}
+
+@media (max-width:750px){
+    button{
+        width: 80px;
+    }
+}
+@media (max-width:750px){
+    p{
+        font-size: small;
+        font-weight: 400;
+    }
+}
+@media (max-width:750px){
+    a{
+        font-size: small;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="dianireg.css">
+     
+    </head>
+    <body>
+        <h1>Diani Hotel</h1>
+        <div class="Register">
+            
+            
+               <div class="name">
+                <label for=""> Name:</label>
+                <input type="name" placeholder="your name" name="" required>
+
+            </div>
+               <div class="email">
+                
+                <label for="">Email:</label>
+                <input type="email" placeholder="your email" name="" id="" required>
+
+               </div>
+               <div class="id" >
+                
+                <label for=""> #Id  no:</label>
+                <input type="number" placeholder="your Id number" name="" id="" required>
+
+               </div>
+               <div class="gender" >
+                <div>
+                    <label for="">Gender:</label>
+                    
+                             
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                         
+                
+                
+                
+                </div>
+                
+               <!-- <div>
+                <ul>
+                             
+                <li> <input type="radio" name="gender">Male</li>
+                <li><input type="radio" name="gender">Female</li>
+                </ul>
+               </div>  -->
+                             
+                           
+               </div>
+               <div class="contact">
+                
+                <label for="">contact:</label>
+                <select>
+                    <option>+254</option>
+                    <option>+255</option>
+                    <option>+256</option>
+                    <option>+257</option>
+                </select>
+                <input type="number" placeholder="7xxxx3455" id="" required>
+
+               </div> 
+                
+                <div class="checkbox">
+                    <label for=""><input type="checkbox">I agree to all terms & conditions </label>
+                    
+                </div>
+                <button onclick="openpopup()">Register</button>
+                <div class="login"><p>Already have an account?<a href="newlogin.html">Login</a></p></div>
+            </div>
+
+
+
+        </div>
+        <div class="popup" id="popup">
+            <img src="images/IMG_20241104_135755.jpg">
+            <h1>THANK YOU!!</h1>
+            <h2>You have successfully created your Diani account.</h2>
+            <h2>You can now proceed to login.</h2>
+            <a  onclick="closepopup()">Ok</a>
+        </div>
+        <script>
+            let popup = document.getElementById("popup")
+            function openpopup(){
+                popup.classList.add("open-popup")
+
+            }
+            function closepopup(){
+                popup.classList.remove("open-popup")
+
+            }
+        </script>
+
+    </body>
+
+
+</html>

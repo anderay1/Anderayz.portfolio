@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="with=device width,intitial scale">
+        <link rel="stylesheet" href="project.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        <div class="heading">
+            <a class="logo"><span>Portfolio</span></a>
+        
+            <nav class="nav">      
+                <a href="portfolio.html" style="--i:1">Home</a>
+                <a href="about.html" style="--i:2">About</a>
+                <a href="services.html" style="--i:3">Services</a>
+                <a href="skills.html" style="--i:4">Skills</a>
+                <a href="project.html" style="--i:5">Projects</a>
+                <a href="contacts.html" style="--i:6">Contacts</a>
+            </nav>     
+        </div>
+        <div class="projects">
+            <h1>My <span>Projects.</span></h1>
+            <div class="video">
+                <video controls width="200px" height="200px">
+                    <source src="images/videos/Screen Recording 2025-01-06 175457.mp4" >
+                </video>
+                
+                
+                <video controls width="200px" height="200px">
+                    <source src="images/videos/project1.mp4">
+                </video>
+          
+            </div>
+        </div>
+        <div class="contact"><h1 >How To Contact <span>Me?</span></h1></div>
+        <form class="form">
+        <div class="name">
+        <div class="fname">
+            <input type="name" placeholder="Your First Name" name="" id="fname" required>
+        </div>
+        <div class="email">
+            <input type="email" placeholder="Your Email" name="" id="email" required>
+        </div> 
+        </div>
+        <div class="mail">  
+        <div class="lname">
+            <input type="name" placeholder="Your Last Name" name="" id="lname" required>
+        </div>
+        <div class="subject">
+            <input type="text" placeholder="Your Subject" name="" id="subject" required>
+        </div>
+        </div>
+        
+        <div class="mess"> 
+            <textarea id="mess" placeholder="Your Message"></textarea>
+
+        </div>
+        <button type="submit"> Submit </button>   
+        </form>  
+              
+    <div class="footer"></div>
+    <footer class="foot">
+        <p>&copy; 2025@ShowMax-Tech Lmtd. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+<script src="main.js"></script>
+
+<script>
+        var typed = new Typed('.txt', {
+          strings: ['Web Developer//Web Designer', 'Business & Financial Analyst//Statistician.','Frontend & Backend Developer'],
+          typeSpeed: 100,
+          backSpeed: 100,
+          backDelay: 1000,
+          loop: true
+          
+        });
+</script>
+    
+</body>
+
+</html>

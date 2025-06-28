@@ -1,0 +1,127 @@
+body{margin: 0;
+    font-family: "poppins" sans-serif;
+    background-image: url("images/asland.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+
+}
+h1{color: #fff;
+    font-size:larger ;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    user-select: none;
+
+}
+.Login{position: absolute;
+    top: 10%;
+    left: 35%;
+    background:transparent;
+    backdrop-filter: blur(15px);
+    width: 300px;
+    height: 180px;
+    padding: 12px;
+    border-radius: 20px;
+    
+
+}
+.box{padding: 12px;
+    justify-content: center;
+
+}
+.name{padding-bottom: 12px;
+
+}
+.name label{border: none;
+    user-select: none;
+}
+.name input{border: none;
+    border-radius:4px ;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+
+}
+.password{padding-bottom: 12px;
+
+}
+.password label{user-select: none;
+
+}
+.password label :placeholder-shown{
+    user-select: none;
+}
+.password input{border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+
+}
+.checkbox{display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.checkbox p{user-select: none;
+
+}
+.checkbox label{user-select: none;
+    justify-content: space-between;
+
+}
+.checkbox label input{background-color: #000;
+    cursor: pointer;
+
+}
+a{text-decoration: none;
+color:#12fd06;}
+button{background: #fff;
+    border: none;
+    border-radius: 12px;
+    padding-bottom: 0;
+    user-select: none;
+    width: 100px;
+}
+button:hover{box-shadow: 0 0 5px #12fd06,
+    0 0 25px #12fd06, 0 0 50px #12fd06,
+    0 0 200px #12fd06, 0 0 200px #12fd06;
+
+}
+p{user-select: none;
+
+}
+@media (max-width:750px){
+    body{width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media (max-width:750px){
+    .Login{
+        left: 20%;
+    }
+
+}
+@media (max-width:750px){
+    h1{
+        font-size: small;
+        font-weight: 400;
+    }
+}
+@media (max-width:750px){
+    .Login label{
+        font-size: small;
+        font-weight: 400;
+    }
+}
+@media (max-width:750px){
+    button{
+        width: 70px;
+    }
+}
+

@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{margin:0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+    background-image: url("images/diani.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+    width: 100%;
+    min-height: 100vh;
+
+}
+.name{position: absolute;
+    top: 15%;
+    left:1%;
+
+
+}
+.menu ul{padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+
+}
+.menu ul li{margin-left: 12px;
+    float: left;
+
+}
+   
+.name h1{color: #fff;
+    font-size: larger;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+    user-select: none;
+
+}
+.menu{position: absolute;
+    top: 5%;
+    left: 55%;
+   
+
+}
+
+
+
+
+/* .menu ul li{text-decoration: none;
+    float: left;
+    margin-left: 20px;
+    border: none; */
+    
+
+.menu ul li a{text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+.menu ul li a:hover{color: #07f007;
+
+}
+
+.button{position: absolute;
+    top: 8%;
+    left:85%;
+
+}
+.button   button{background: #fff;
+    color: #07f007;
+    border: none;
+    border-radius: 12px;
+    
+    width: 50px;
+}
+.button button:hover{box-shadow: 0 0 5px  #07f007,
+    0 0 25px  #07f007, 0 0 50px  #07f007,
+    0 0 200px #07f007, 0 0 200px  #07f007 ;
+
+}
+.button a{cursor: pointer;
+    text-decoration: none;
+    color: #07f007;
+    margin-left: 3px;
+
+}
+.services{position: absolute;
+    top: 50%;
+    left: 5px;
+    background:transparent;
+    backdrop-filter: blur(15px);
+    opacity: 2px;
+    width: 300px;
+    height: 250px;
+    border-radius: 12px;
+
+}
+.services ul{text-decoration: none;
+    color: #fff;
+
+}
+.services h1{color: #fff;
+    font-size: larger;
+    font-weight: 700;
+    font-style: normal;
+    user-select: none;
+    text-align: center;
+
+}
+.services p{color: #fff;
+    font-style: italic;
+    font-weight: 700;
+    user-select: none;
+    padding-left: 0;
+
+}
+@media (max-width:750px){
+    body{
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media (max-width:750px){
+    .name h1{
+        font-size: small;
+        font-weight: 400;
+    }
+}
+@media (max-width:750px){
+    .menu{
+        left: 35%;
+    }
+}
+@media (max-width:750px){
+    .menu ul li{
+        margin-left: 12px;
+    }
+}
+@media (max-width:750px){
+    .menu ul li a{font-size: smaller;
+        font-weight: lighter;
+
+    }
+}
+@media (max-width:750px){
+    .button{
+        left: 85% ;
+        margin-top: -14px;
+        
+    }
+}
+@media (max-width:750px){
+    .services{top: 58%;
+        left: 2px;
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width:750px){
+    .services h1{
+        font-size: small;
+        font-weight: 400;
+        margin-left: -45px;
+    }
+}
+@media (max-width:750px){
+    .services p{
+        font-size: small;
+        font-weight: 400;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,326 @@
+*{padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins" sans-serif;
+  
+  }
+  body{
+      background-color: rgb(4, 4, 141);
+      min-height: 100vh;
+      user-select: none;
+  
+  }
+  .heading{position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px  ;
+      background: #2d06f1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+  
+  }
+  .nav{position: absolute;
+      left: 560px;
+      opacity: 0;
+      transition: .6s;
+      animation: Slidetop .6s ease forwards;
+      animation-delay: .2s
+  
+      
+  }
+  .nav a{color: #fff;
+      text-decoration: none;
+      margin-left: 35px;
+      opacity: 0;
+      transition: .2s ease;
+      animation: Slidetop .6s ease forwards;
+      animation-delay: calc(.2s * var(--i));
+  }
+  .nav a:hover{
+      color: rgb(7, 171, 171) ;
+  
+  }
+  .logo{
+      font-size: large;
+      font-weight: 700;
+      
+      margin-left: 10px;
+      opacity: 0;
+      animation: Slideright 1s ease forwards ;
+      animation-delay: .6s;
+      
+      
+  }
+  @keyframes Slideright{
+      0%{ 
+          transform: translateX(-100px);
+          opacity: 0;
+      }
+      100%{transform: translateX(0px);
+          opacity: 1;
+  
+      }
+  }
+  
+  @keyframes Slidetop{
+      0%{
+          transform: translateY(100px);
+          opacity: 0;
+      }
+      100%{
+          transform: translateY(0px);
+          opacity: 1;
+      }
+  }
+  .introduction{opacity: 0;
+                animation: Slidebottom 1s ease forwards;
+                animation-delay: 0.2s;
+                margin-top: 60px;
+  
+  }
+  @keyframes Slidebottom{
+      0%{
+          transform: translateY(-100px);
+          opacity: 0;
+      }
+      100%{
+          transform: translateY(0);
+          opacity: 1;
+      }
+  }
+  .icon{margin-left: 20px;
+      margin-bottom: 15px;
+    
+  
+  }
+  
+  .brief{opacity: 0;
+         animation: Slideleft 1s ease forwards;
+         animation-delay: .2s;
+  
+  }
+  @keyframes Slideleft{
+      0%{
+          transform: translateX(100px);
+          opacity: 0;
+      }
+      100%{
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+  .Intro{color: #fff;
+      font-size: medium;
+      font-weight: 700;
+       margin-top: 25px ;
+       margin-left: 14px;
+       letter-spacing: 2px;
+       padding: 12px;
+       
+  
+  
+  
+  }
+  h2{color: #fff;
+      font-size: medium;
+      font-weight: 700;
+      margin-left: 14px;
+      padding: 10px;
+  }
+  span{color: rgb(7, 171, 171);
+      font-size: medium;
+      font-weight: 700;
+  
+  }
+  h3{color:#fff ;
+      font-weight: 500;
+      margin-left: 14px;
+      padding: 10px;
+  
+  }
+  
+  p{color: #fff;
+  font-size: medium;
+  font-weight: 600;
+  margin-left: 14px;
+  font-style: italic;
+  padding: 10px ;
+  padding-bottom: 30px;
+  
+  }
+  
+  .slider{position: absolute;
+    left: 100px;
+    top: 120px;
+    width: 40px;
+    height: 45px;
+    opacity: 0;
+    animation: Slidetop 1s ease forwards;
+    animation-delay: .4s;
+  }
+  img{width: 180px;
+      height: 200px;
+      border-radius: 50%;
+      box-shadow: 0 0 25px rgb(7, 171, 171) ;
+  
+  }
+  .btn1 a{text-decoration: none;
+      color: #fff;
+      font-size: medium;
+      font-weight: 500;
+      margin-left: 105px;
+      top: 28px;
+      padding: 2px 8px 5px 8px;
+      background: rgb(7, 171, 171) ;
+      border-radius: 12px;
+      letter-spacing: 2px;
+     
+       
+  }
+  .btn1{ animation: Slideleft 1s ease forwards;
+      opacity: 0;
+      animation-delay: .2s;
+  
+  }
+  
+  .btn1 a:hover{color: rgb(7, 171, 171) ;
+               background:#fff ;
+               box-shadow: 0 0 25px rgb(7, 171, 171), 0 0 50px rgb(7, 171, 171),
+              0 0 200px rgb(7, 171, 171),0 0 200px rgb(7, 171, 171) ;
+  
+  }
+  .abt {color: #fff;
+      font-size: medium;
+      font-weight: 600;
+      margin-left: 14px;
+  
+  }
+  .about{
+      margin-top: 50px;
+      margin-left: 550px;
+  
+  }
+  .btn2 a{text-decoration: none;
+          color: #fff;
+          background:rgb(7, 171, 171) ;
+          padding: 2px 8px 2px 8px;
+          margin-left: 25px;
+          border-radius: 12px;
+        
+  }
+  .btn2 a:hover{background: #fff;
+                color:rgb(7, 171, 171) ;
+                box-shadow: 0 0 25px rgb(7, 171, 171), 0 0 50px rgb(7, 171, 171),
+              0 0 200px rgb(7, 171, 171),0 0 200px rgb(7, 171, 171) ;
+  
+  }
+
+  .dld{margin-left: 548px;
+    margin-top: 15px;     
+  }
+  .d{margin-left: 25px;}
+  @media (max-width:750px){
+    body{width: 100%;           
+    }
+}  
+@media (max-width:750px){
+    .heading{width: 980px;           
+    }
+}
+@media (max-width:750px){
+    .nav a{margin-left: 15px;
+        font-size: small;
+        font-weight: 500; 
+           
+    }
+}
+@media (max-width:600px){
+    .nav{left: 100px;
+     
+        
+    }
+}
+@media (max-width:750px){
+    .logo{font-size: smaller;
+        font-weight: lighter;
+        
+    }
+}
+@media (max-width:750px){
+  .introduction{width: 300px;
+      
+      
+  }
+}
+
+@media (max-width:750px){
+    .introduction h1,h2,h3,span{font-size: smaller;
+        font-weight: lighter;
+        
+    }
+}
+@media (max-width:750px){
+  .brief{width: 250px;
+      
+      
+  }
+}
+@media (max-width:750px){
+    .brief p{font-size: smaller;
+        font-weight: 2px;       
+    }
+}
+@media (max-width:750px){
+    .btn1{      
+        margin-left: -45px;
+           
+    }
+}
+@media (max-width:750px){
+    .btn1 a{font-size: smaller;
+        font-weight: lighter;
+               
+    }
+}
+@media (max-width:750px){
+    .slider{
+        left: 40px;
+        top: 180px;       
+    }
+  }
+  @media (max-width:750px){
+    .slider img{
+        width:100px;
+        height: 100px;       
+    }
+  }
+@media (max-width:750px){
+    .about{
+        margin-left: 180px;
+        top: 400px;
+        width: 260px;       
+    }
+}
+@media (max-width:750px){
+    .about h1,h2,p,span{
+        font-size: smaller;
+        font-weight: lighter;      
+    }
+}
+@media (max-width:750px){
+    .btn2 a{
+       font-weight : lighter;
+        font-size: smaller;       
+    }
+}
+@media (max-width:750px){
+    .dld{margin-left: 175px;
+        margin-top: 15px;     
+      }
+}
+@media (max-width:750px){
+    .d{margin-left: 25px;}
+}
