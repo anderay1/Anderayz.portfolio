@@ -516,7 +516,7 @@
       display: flex;
       margin-top: 75px;
   }
-  @media (max-width:750px){
+  @media (max-width:450px){
       body{width: 100%;           
       }
   }  
@@ -537,20 +537,20 @@
           
       }
   }
-  @media (max-width:750px){
+  @media (max-width:450px){
       .logo{font-size: smaller;
           font-weight: lighter;
           
       }
   }
-  @media (max-width:750px){
+  @media (max-width:450px){
     .introduction{width: 300px;
         
         
     }
 }
 
-  @media (max-width:750px){
+  @media (max-width:450px){
       .introduction h1,h2,h3,span{font-size: smaller;
           font-weight: lighter;
           
@@ -598,7 +598,7 @@
           width: 260px;       
       }
   }
-  @media (max-width:750px){
+  @media (max-width:450px){
       .about h1,h2,p,span{
           font-size: smaller;
           font-weight: lighter;      
